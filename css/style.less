@@ -16,6 +16,7 @@ button{
 .container{
   display: flex;
   justify-content: space-between;
+  margin: 0 103px;
 }
 
 .content{
@@ -171,6 +172,10 @@ button{
   display: flex;
   justify-content: space-between;
   margin: 20px 20px 0 20px;
+  img{
+    width: 110px;
+    height: 36px;
+  }
 }
 
 .ticket__content{
@@ -206,7 +211,7 @@ button{
   font-size: 24px;
   line-height: 24px;
   color: #2196F3;
-  margin-bottom: 15px;
+  margin: 10px 0 15px 0;
 }
 
 .ticket__image{
@@ -268,12 +273,22 @@ button{
     width: 100%;
   }
 
-  .container{
-    width: 90%;
+  .ticket__header{
+    img{
+      margin-right: 5%;
+    }
+  }
+
+  .ticket__description{
+    font-size: 11px;
+  }
+
+  .ticket__information{
+    font-size: 12px;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 788px){
   .container{
     flex-direction: column;
     margin: 0 auto;
@@ -281,11 +296,6 @@ button{
 
   .content{
     margin-left: 0;
-    width: 95%;
-  }
-
-  .filter__container{
-    width: 95%;
   }
 
   .stopsContainer{
@@ -298,16 +308,24 @@ button{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+  }
+
+  .filter__container{
+    width: 75%;
+    margin: 0 auto 18px;
   }
 
   .ticket{
-    width: 95%;
     height: 170px;
+    width: 75%;
+    margin: 0 auto 18px;
   }
 
   .ticket__header{
-    margin: 15px 5px 15px 5px;
+    margin: 15px 5px 0 5px;
+    img{
+      margin-right: 15%;
+    }
   }
 
   .ticket__content{
@@ -315,14 +333,14 @@ button{
   }
 
   .ticket__description{
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 22px;
     margin: 0;
   }
 
   .ticket__information{
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .ticket__price{
@@ -330,5 +348,23 @@ button{
   }
 }
 
+@media (max-width: 450px){
+  .ticket__information{
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .ticket__description{
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .ticket__header{
+    margin: 15px 5px 15px 5px;
+    img{
+      margin: 0;
+    }
+  }
+}
 
 
