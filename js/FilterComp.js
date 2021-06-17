@@ -65,8 +65,8 @@ Vue.component('filters', {
                                 <div class="ticket__header" v-html="img(item.carrier,item.price)"></div>
                                 <div class="ticket__content">
                                     <div class="ticket__block">
-                                        <p class="ticket__description">{{item.segments[0].origin}}-{{item.segments[0].destination}}</p>
-                                        <p class="ticket__information">{{moment(item.segments[0].date)}}-{{momentAdd(item.segments[0].date,item.segments[0].duration)}}</p>
+                                        <p class="ticket__description">{{item.segments[0].origin}} - {{item.segments[0].destination}}</p>
+                                        <p class="ticket__information">{{moment(item.segments[0].date)}} - {{momentAdd(item.segments[0].date,item.segments[0].duration)}}</p>
                                     </div>
                                     <div class="ticket__block">
                                         <p class="ticket__description">В пути</p>
@@ -79,8 +79,8 @@ Vue.component('filters', {
                                 </div>
                                 <div class="ticket__content">
                                     <div class="ticket__block">
-                                        <p class="ticket__description">{{item.segments[1].origin}}-{{item.segments[1].destination}}</p>
-                                        <p class="ticket__information">{{moment(item.segments[1].date)}}-{{momentAdd(item.segments[1].date,item.segments[1].duration)}}</p>
+                                        <p class="ticket__description">{{item.segments[1].origin}} - {{item.segments[1].destination}}</p>
+                                        <p class="ticket__information">{{moment(item.segments[1].date)}} - {{momentAdd(item.segments[1].date,item.segments[1].duration)}}</p>
                                     </div>
                                     <div class="ticket__block">
                                         <p class="ticket__description">В пути</p>
