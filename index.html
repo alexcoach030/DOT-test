@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Sky tickets</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="wrap">
+            <img class="logo" src="img/logo.svg" alt="logo">
+            <div class="container">
+                <div>
+                    <stops></stops>
+                </div>
+                <div class="content">
+                    <sort></sort>
+                    <filters></filters>
+                    <tickets></tickets>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script defer src="js/TicketsComp.js"></script>
+    <script defer src="js/FilterComp.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
