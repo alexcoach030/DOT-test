@@ -20,13 +20,13 @@ Vue.component('filters', {
                 let a = stops.length
                 switch (a){
                     case 0:
-                        return 'Пересадок нет';
+                        return 'ПЕРЕСАДОК НЕТ';
                     case 1:
-                        return '1 пересадка';
+                        return '1 ПЕРЕСАДКА';
                     case 2:
-                        return '2 пересадки';
+                        return '2 ПЕРЕСАДКИ';
                     case 3:
-                        return '3 пересадки';
+                        return '3 ПЕРЕСАДКИ';
                 }
             }
         }
@@ -69,7 +69,7 @@ Vue.component('filters', {
                                         <p class="ticket__information">{{moment(item.segments[0].date)}} - {{momentAdd(item.segments[0].date,item.segments[0].duration)}}</p>
                                     </div>
                                     <div class="ticket__block">
-                                        <p class="ticket__description">В пути</p>
+                                        <p class="ticket__description">В ПУТИ</p>
                                         <p class="ticket__information">{{momentDuration(item.segments[0].duration)}}</p>
                                     </div>
                                     <div class="ticket__block">
@@ -83,7 +83,7 @@ Vue.component('filters', {
                                         <p class="ticket__information">{{moment(item.segments[1].date)}} - {{momentAdd(item.segments[1].date,item.segments[1].duration)}}</p>
                                     </div>
                                     <div class="ticket__block">
-                                        <p class="ticket__description">В пути</p>
+                                            <p class="ticket__description">В ПУТИ</p>
                                         <p class="ticket__information">{{momentDuration(item.segments[1].duration)}}</p>
                                     </div>
                                     <div class="ticket__block">

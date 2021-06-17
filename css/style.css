@@ -57,8 +57,8 @@ button {
 .stops__filter .stops__checkbox + label::before {
   content: '';
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid #adb5bd;
@@ -71,8 +71,8 @@ button {
 }
 .stops__filter .stops__checkbox:checked + label::before {
   border-color: #0b76ef;
-  background-color: white;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3e%3cpath fill='%2196f3' d='M4.28571 8L0 4.16123L1.20857 3.0787L4.28571 5.82726L10.7914 0L12 1.09021L4.28571 8Z'/%3e%3c/svg%3e");
+  background-image: url("../img/check-solid.svg");
+  background-size: 80% 80%;
 }
 .stops__item_hovered {
   background-color: #f1fcff;
@@ -209,6 +209,7 @@ button {
   font-weight: bolder;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: 0.5px;
   color: #4A4A4A;
 }
 .ticket__description {
@@ -217,6 +218,7 @@ button {
   line-height: 18px;
   color: #A0B0B9;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 .ticket__block {
   width: 33%;
