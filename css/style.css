@@ -291,7 +291,7 @@ button {
     flex-direction: column;
     margin: 0 auto;
   }
-  .stops__container {
+  .stopsContainer {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
